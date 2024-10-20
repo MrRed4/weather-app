@@ -1,0 +1,101 @@
+:root {
+    --light-sky-blue: #c6fcff;
+    --sky-blue: #82c8e5;
+    --stormy-sky: #59697f;
+    --night-sky: #222125;
+    --dark: #1e1e1e;
+    --darker: #1a1a1a;
+    --darkest: #121212;
+    --borders: #333333;
+}
+
+.light-sky-blue {
+    background-color: var(--light-sky-blue);
+}
+
+.sky-blue {
+    background-color: var(--sky-blue);
+}
+
+.stormy-sky {
+    background-color: var(--stormy-sky)
+}
+
+.night-sky {
+    background-color: var(--night-sky);
+}
+
+html, * {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-size: 32px;
+    background-color: var(--darkest);
+    transition: 1s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 800px;
+    background-color: var(--darker)
+}
+
+form {
+    display: flex;
+}
+
+.form-container {
+    display: grid;
+    align-items: center;
+    height: 200px;
+}
+
+#location {
+    border-radius: 18px 0 0 18px;
+    padding-left: 24px;
+    border: 1px solid var(--borders);
+    background-color: var(--dark);
+    color: white;
+    width: 400px;
+    height: 48px;
+    font-size: 24px;
+}
+
+#submit-location {
+    border-radius: 0 18px 18px 0;
+    border: 1px solid var(--borders);
+    background-color: var(--dark);
+    color: rgb(200, 200, 200);
+    font-size: 24px;
+    padding: 0 24px 0 14px;
+    transition: 0.4s;
+}
+
+#submit-location:hover {
+    cursor: pointer;
+    background-color: var(--borders);
+}
+
+.weather-container {
+    box-sizing: border-box;
+    padding: 24px;
+    width: 100%;
+    flex: 1;
+    background: var(--dark);
+    color: white;
+}
+
+.divider {
+    width: 100%;
+    height: 50px;
+    border-radius: 50% 50% 0 0;
+    background: var(--dark);
+}
